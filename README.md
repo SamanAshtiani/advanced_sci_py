@@ -4,6 +4,8 @@
 
 ### main goal:
 creating a single concatenated dataframe of 5 cancer data types gene expression levels and their corresponding normal gene expression levels using pandas and numpy.
+
+### procedure:
 1)Collecting cancerous and non-cancerous 'gene expression levels' in tsv format for 5 different cancer types
 2)trimming and cleaning the datasets
 3)removing unnecessary columns
