@@ -14,6 +14,8 @@ creating a single concatenated dataframe of 5 cancer data types gene expression 
 
 4)adding 'normal', 'cancerous', 'cancer type' columns for the future grouping use
 
-5)concatenating all datasets into one final dataframe
+5)converting (mapping) ensemble IDs on the Gene Ontology names
 
-6) grouping by first three columns
+6)concatenating all datasets into one final dataframe
+
+7)grouping by first three columns
