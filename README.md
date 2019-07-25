@@ -18,4 +18,4 @@ creating a single concatenated dataframe of 5 cancer data types gene expression 
 
 6)concatenating all datasets into one final dataframe
 
-7)grouping by first three columns
+7)grouping by first three columns to facilitate access using 'cancer or normal', 'tissue' and 'cancer type'
