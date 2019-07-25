@@ -21,10 +21,7 @@ for g in genes_lst:
 genes_fl.close()
 
 
-ens_go_dic = dict(zip(ens_go_df.ensemble, ens_go_df.symbol))
-# ens_go_dic
-
-enst_go_table = 
+ens_go_dic = dict(zip(ens_go_df.ensemble, ens_go_df.symbol)) 
 
 annot_df = pd.read_csv('GTEx_v7_Annotations_SampleAttributesDS.txt', sep='\t')
 print(annot_df.shape)
@@ -37,7 +34,13 @@ annot_dic = annot_df.groupby('SMTS')['SAMPID'].apply(list).to_dict()
 
 
 # Pathology data
-Staining profiles for proteins in human tumor tissue based on immunohistochemisty using tissue micro arrays and log-rank P value for Kaplan-Meier analysis of correlation between mRNA expression level and patient survival. The tab-separated file includes Ensembl gene identifier ("Gene"), gene name ("Gene name"), tumor name ("Cancer"), the number of patients annotated for different staining levels ("High", "Medium", "Low" & "Not detected") and log-rank p values for patient survival and mRNA correlation ("prognostic - favourable", "unprognostic - favourable", "prognostic - unfavourable", "unprognostic - unfavourable"). The data is based on The Human Protein Atlas version 18.1 and Ensembl version 88.38.
+#Staining profiles for proteins in human tumor tissue based on immunohistochemisty using tissue micro
+#arrays and log-rank P value for Kaplan-Meier analysis of correlation between mRNA expression level and patient survival.
+#The tab-separated file includes Ensembl gene identifier ("Gene"), gene name ("Gene name"), tumor name ("Cancer"), 
+#the number of patients annotated for different staining levels ("High", "Medium", "Low" & "Not detected") and log-rank 
+#p values for patient survival and mRNA correlation ("prognostic - favourable", "unprognostic - favourable", 
+#"prognostic - unfavourable", "unprognostic - unfavourable"). The data is based on The Human Protein Atlas version 18.1 
+#and Ensembl version 88.38.
 
 import re
 
